@@ -55,6 +55,10 @@ public class MaleZombieController : MonoBehaviour {
 
             //}
         }
+        else
+        {
+            myAnimator.SetFloat("Speed", 0.0f);
+        }
 
 
        /* hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
