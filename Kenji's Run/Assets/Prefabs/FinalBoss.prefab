@@ -88,9 +88,25 @@ GameObject:
   - component: {fileID: 61008339623933788}
   - component: {fileID: 95017209427172912}
   - component: {fileID: 114901260900950530}
+  - component: {fileID: 114198482534797718}
   m_Layer: 0
   m_Name: FinalBoss
   m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1782506416726168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4792950764608978}
+  m_Layer: 0
+  m_Name: ThrowPoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,13 +144,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1707195009578852}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 119.59, y: -0.91, z: 0}
+  m_LocalPosition: {x: 169.14658, y: 3.4801342, z: 0.828125}
   m_LocalScale: {x: 0.64000005, y: 0.5, z: 0}
   m_Children:
   - {fileID: 4219752966344182}
   - {fileID: 4084679272001292}
   - {fileID: 4923335350280020}
   - {fileID: 4687367177820332}
+  - {fileID: 4792950764608978}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -150,6 +167,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4314635543794002}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4792950764608978
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1782506416726168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.71, y: 2.49, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4314635543794002}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4923335350280020
 Transform:
@@ -282,6 +312,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114198482534797718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1707195009578852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e0e6a06bebfd1341a0218d26141d1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kenjiRange: 5
+  enemyStar: {fileID: 0}
+  kenji: {fileID: 0}
+  ThrowPoint: {fileID: 0}
 --- !u!114 &114677041805744834
 MonoBehaviour:
   m_ObjectHideFlags: 1
