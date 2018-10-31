@@ -104,7 +104,6 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             Instantiate(NinjaStar, firepoint.position, firepoint.rotation);
-            
         }
 
             // Animator Setting
@@ -126,12 +125,7 @@ public class PlayerController : MonoBehaviour {
 
         if (collision.gameObject.name.Equals("Attack") || (collision.gameObject.layer == 11) || (collision.tag == "Enemy"))
         {
-            HealthManager.health -= 1f;
-            levelManager.RespawnPlayer();
-           // SceneManager.LoadScene("DeathMenu");
-        }
-        if(HealthManager.health < 1)
-        {
+            //levelManager.RespawnPlayer();
             SceneManager.LoadScene("DeathMenu");
         }
     }
