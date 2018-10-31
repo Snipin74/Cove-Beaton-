@@ -6,7 +6,7 @@ using UnityEngine;
 public class HealthManager : MonoBehaviour {
 
     public Text HealthText;
-    float maxHealth = 3f;
+    float maxHealth = 100f;
     public static float health;
 
 	// Use this for initialization

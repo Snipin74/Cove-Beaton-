@@ -79,7 +79,7 @@ public class MaleZombieController : MonoBehaviour {
         {
             transform.localScale = new Vector3(0.64f, 0.5f, transform.localScale.z);
             myRidgidBody.velocity = new Vector2(-moveSpeed, myRidgidBody.velocity.y);
-        }
+        }*/
 
         if (IsAttacking)
         {
@@ -87,7 +87,7 @@ public class MaleZombieController : MonoBehaviour {
             myRidgidBody.velocity = Vector2.zero;
         }
         else
-            myAnimator.SetBool("Attack", false);*/
+            myAnimator.SetBool("Attack", false);
 
     }
 

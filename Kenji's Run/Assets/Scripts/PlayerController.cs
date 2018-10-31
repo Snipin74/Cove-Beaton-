@@ -124,10 +124,10 @@ public class PlayerController : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.name.Equals("Attack") || (collision.gameObject.layer == 11) || (collision.tag == "Enemy"))
+        if (collision.gameObject.name.Equals("Attack"))
         {
             HealthManager.health -= 1f;
-            levelManager.RespawnPlayer();
+            //levelManager.RespawnPlayer();
            // SceneManager.LoadScene("DeathMenu");
         }
         if(HealthManager.health < 1)
