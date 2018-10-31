@@ -37,7 +37,7 @@ public class enemyStar : MonoBehaviour {
     {
         if(collision.name == "Player")
         {
-            HealthManager.health -= 1f;
+            HealthManager.health -= 20f;
             Destroy(gameObject);
         }
     }
