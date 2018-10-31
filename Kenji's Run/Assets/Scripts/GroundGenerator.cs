@@ -140,8 +140,8 @@ public class GroundGenerator : MonoBehaviour
                 newPowerup.transform.position = transform.position + new Vector3(distanceBetween / 2f, Random.Range(powerupHeight / 2f, powerupHeight), 0f);
 
                 newPowerup.SetActive(true);
-            }
-            transform.position = new Vector3(transform.position.x + (groundWidths[groundPicker] / 2), transform.position.y, transform.position.z);*/
+            }*/
+            transform.position = new Vector3(transform.position.x + (groundWidths[groundPicker] / 2), transform.position.y, transform.position.z);
         }
 
     }
